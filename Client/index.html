@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CryptoAlert - Juli3nNico</title>
+  <meta name="description" content="Followed cryptos">
+  <meta name="author" content="Juli3nNico">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<header>
+    <div id="HeaderLeftMargin">
+        Crypto Alert
+    </div>
+    <div id="ProfileID">
+        Juli3nNico
+    </div>
+    <div id="HeaderRightMargin">
+            <table id="CurrencySelector">
+                    <tr>
+                      <td><button default="clicked" id="CurrencySelectorEUR">&euro;</button></td>
+                      <td><button  id="CurrencySelectorGBP">&pound;</button></td>
+                      <td><button id="CurrencySelectorUSD">$</button></td>
+                    </tr>
+            </table>
+    </div>
+</header>
+<body>
+  <section id="SectionAddAlert">
+    <h1>Add Alert</h1>
+    <table id="TableAddAlert">
+      <tr>
+        <td><input name="CurrencySymbol" default="BTC"></input></td>
+        <td>is</td>
+        <td>
+            <select name="Operators">
+                <option value="greater">greater than</option>
+                <option value="lower">lower than</option>
+              </select>
+        </td>
+        <td><input name="FiatValue" default="10000"></input></td>
+        <td class="ReferenceFiatCurrency" id="TableAddAlertCurrencySymbol"></td>
+        <td><button>Add</button></td>
+      </tr>
+    </table>
+  </section>
+  <section id="SectionFollows">
+    <h1>Follows</h1>
+    <div id="TableFollowsAndOptions">
+      <div id="TableFollowsSortButtons">
+        <button>Aa</button>
+        <button class="ReferenceFiatCurrency"></button>
+      </div>
+      <table id="TableFollows">
+        <tr>
+          <td>BTC</td><td>xxx</td><td class="ReferenceFiatCurrency"></td>
+          <td><button>Show Alerts</button></td>
+          <td><button>Remove Alerts</button></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>
